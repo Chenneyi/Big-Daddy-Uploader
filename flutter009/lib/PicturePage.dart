@@ -46,9 +46,7 @@ class _pictureState extends State<picture> {
 
 
   Widget _ImageView(imageUrl, name, index) {
-    return Hero(
-            tag: name,
-            child: Stack(
+    return Stack(
               children: [
                 Container(
                     padding: EdgeInsets.all(3),
@@ -90,7 +88,7 @@ class _pictureState extends State<picture> {
                           fit: BoxFit.cover,
                         )))
               ],
-            ));
+            );
   }
 
 
